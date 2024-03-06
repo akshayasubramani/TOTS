@@ -1,0 +1,39 @@
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 84px; /* Adjust the gap between images */
+  margin-left:10px
+}
+  
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f00c0c;
+    padding: 10px;
+    margin-top: 39px;
+}
+  
+  .image-container {
+    width: 100%; /* Ensure image containers fill their parent */
+    height: 200px; /* Set a fixed height for uniformity */
+    /* Hide overflow if images are larger */
+  }
+  
+  .book-image {
+    width: 94%;
+    height: 140%;
+    object-fit: cover;
+  }
+  
+  .book-details {
+    margin-top: 68px;
+  }
+  
+  .add-to-cart-button {
+    width: 100%;
+    height:50px;
+    background-color:red;
+  }
+  
