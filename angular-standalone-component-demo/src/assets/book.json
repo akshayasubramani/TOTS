@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Caterpillar", 
+        "imageUrl": "../assets/kids book.webp"
+    },
+    {
+        "title": "monkey", 
+        "imageUrl": "../assets/kids books.webp"
+    },
+    {
+        "title": "Farm", 
+        "imageUrl": "../assets/book3.jpg"
+    },
+    {
+        "title": "Birthday", 
+        "imageUrl": "../assets/book4.webp"  
+    },
+    {
+        "title": "Dino", 
+        "imageUrl": "../assets/book5.jpg"  
+    },
+    {
+        "title": "Solar System", 
+        "imageUrl": "../assets/book6.jpg"  
+    },
+    {
+        "title": "How I grow", 
+        "imageUrl": "../assets/book7.jpg"  
+    },
+    {
+        "title": "Kindness", 
+        "imageUrl": "../assets/book8.jpg"  
+    },
+    {
+        "title": "Peek-A-Boo", 
+        "imageUrl": "../assets/book9.jpg"  
+    }
+
+    
+  ]
+  
+ 
