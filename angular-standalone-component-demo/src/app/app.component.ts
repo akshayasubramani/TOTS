@@ -13,9 +13,12 @@ import { BooksComponent } from './books/books.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private router: Router){}
    title = 'angular-standalone-component-demo';
    isDropdownOpen = false;
    showLoginForm = false;
+   cartItemCount=0
+   buttondisabled:boolean=false
  
 
   toggleDropdown() {
@@ -31,9 +34,23 @@ export class AppComponent {
     console.log("login is clicked")
     
   }
+  isSubmenuRoute(): boolean {
+    // Determine if current route is a submenu route
+    const currentUrl = this.router.url;
+    return currentUrl !== '/' && !currentUrl.startsWith('/home');
+  }
   onClickBooks(){
     console.log("books clicked")
   }
+  toggleCart(){
+    console.log("toggle cart")
+  }
+  addToCarts() {
+    this.cartItemCount=this.cartItemCount+1;
+   
+     // Increment cart item count
+  }
+  
  
   
 

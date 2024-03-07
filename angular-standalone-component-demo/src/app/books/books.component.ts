@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 
 import { Component ,OnInit} from '@angular/core';
 import { ServiceService } from '../service.service';
+import { AppComponent } from '../app.component';
 
 
 @Component({
@@ -13,9 +14,10 @@ import { ServiceService } from '../service.service';
 })
 
 export class BooksComponent implements OnInit {
-  books:any=[]
-  constructor(private booksservice:ServiceService) {}
-  
+  books:any=[];
+  isInCart:any;
+  constructor(private booksservice:ServiceService,private navbarComponent:AppComponent) {}
+  //getting books data from books json
   ngOnInit(): void {
    
     this.booksservice.getBooks().subscribe(data => {
@@ -37,9 +39,9 @@ export class BooksComponent implements OnInit {
   
 
   addToCart(book: any) {
-    // Add logic to add the book to the cart
-    console.log('Added to cart:', book);
-  }
+      this.navbarComponent.addToCarts(); // Call addToCart() method of navbar component
+      console.log('Added to cart:', book);  
+    }
   
 
 
